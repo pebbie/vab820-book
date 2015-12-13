@@ -52,6 +52,8 @@ appsink.connect('new-buffer', on_new_sample)
 
 pipeline.set_state(gst.STATE_PLAYING)
 
+#
+
 import cv2
 
 while True:
