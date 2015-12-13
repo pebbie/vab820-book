@@ -6,7 +6,7 @@ konfigurasi layer : `${BUILD_DIR}/conf/bblayers.conf`
 
 lokasi resep : `sources/meta-*/*.bb`
 
-resep image : `sources/`
+resep image : `sources/meta-via-bsp/meta-vab-820/recipes-via/images/via-image-x11.bb`
 
 lokasi paket yang sudah jadi : `${BUILD_DIR}/tmp/deploy/rpm`
 
