@@ -2,7 +2,7 @@
 
 ## GStreamer 0.10
 
-### ****gst-inspect****
+### duet ****gst-inspect**** dan ****gst-launch****
 + Menampilkan daftar source plugin `gst-inspect | grep src`
 + Menampilkan daftar sink plugin `gst-inspect | grep sink`
 + Mencoba gstreamer `gst-launch videotestsrc ! glimagesink`
@@ -91,4 +91,5 @@ def mouseHandler(event, x, y, flags, params):
     
 cv2.setMouseCallback(MAINWND, mouseHandler, None)
 ```
-return True pada fungsi MouseHandler akan membuat gambar berhenti (freeze)
+Catatan : 
+* return True pada fungsi MouseHandler akan membuat gambar berhenti (freeze)
