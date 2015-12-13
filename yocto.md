@@ -10,7 +10,7 @@ resep image : `sources/`
 
 lokasi paket yang sudah jadi : `${BUILD_DIR}/tmp/deploy/rpm`
 
-lokasi image : `${BUILD_DIR}/tmp/deploy/images`
+lokasi image : `${BUILD_DIR}/tmp/deploy/images/imx6qvab820`
 
 ## Bitbake
 
