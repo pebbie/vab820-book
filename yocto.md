@@ -23,3 +23,7 @@ kompilasi resep : `bitbake nama-resep -c package`
 
 ## Paket-paket esensial
 
+### e2fsprogs
+beberapa program penting yang ada di resep ini diantaranya: 
+* `resize2fs`, digunakan untuk mengubah ukuran volume setelah partisinya diperbesar (menggunakan fdisk)
+* `e2fsck`, digunakan untuk memperbaiki partisi jika terjadi hal.hal yang tidak diinginkan selama mengubah partisi
