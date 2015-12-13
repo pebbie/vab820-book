@@ -7,5 +7,5 @@
 * [Video Capture](video_capture.md)
 * [Serial Communication](serial_communication.md)
 * [Manajemen Paket](manajemen_paket.md)
-* Yocto
+* [Yocto](yocto.md)
 
