@@ -27,3 +27,6 @@ kompilasi resep : `bitbake nama-resep -c package`
 beberapa program penting yang ada di resep ini diantaranya: 
 * `resize2fs`, digunakan untuk mengubah ukuran volume setelah partisinya diperbesar (menggunakan fdisk)
 * `e2fsck`, digunakan untuk memperbaiki partisi jika terjadi hal.hal yang tidak diinginkan selama mengubah partisi
+* 
+e2fsprogs bawaan VIA masih berdasarkan distribusi Yocto Dora. 
+Pada distribusi ini, paket e2fsprogs tidak mengandung resize2fs. Saya anjurkan mengganti resep ini dengan versi 1.42.9 dari distribusi terbaru Yocto. 
