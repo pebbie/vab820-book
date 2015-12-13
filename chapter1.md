@@ -8,6 +8,8 @@ Daftar aplikasi ada di `/usr/share/applications/*.desktop`.
 
 Lokasi log ada di `/var/log/XSession`.
 
+Desktop Session dikonfigurasi di berkas `/etc/matchbox/session`
+
 ## Pengubahan entri desktop
 
 Perubahan pasca penyuntingan berkas `*.desktop` di direktori `/usr/share/applications` hanya akan dilakukan jika ada berkas yang dihapus/ditambah. 
