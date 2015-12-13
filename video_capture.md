@@ -21,3 +21,48 @@ Misalnya untuk kasus video analog,
 ### plugin `appsink`
 
 ## OpenCV 2.4 
+
+### integrasi dengan gstreamer
+````
+import gobject
+gobject.threads_init()
+import gst
+
+pipeline = gst.Pipeline()
+bin = gst.parse_bin_from_description('''
+	tvsrc name=rca !
+	appsink name=app emit-signals=True
+	''', False)
+
+def on_new_sample(sink):
+    global img
+    buffer = sink.emit('pull-buffer')
+    if buffer:
+	    height = 576
+	    width = 720
+        img_buf = np.ndarray(shape=(height+height/2, width), \
+dtype='uint8', buffer=buffer)
+        img = cv2.cvtColor(img_buf, cv2.COLOR_YUV2BGR_NV12)#[:height,]
+    return True
+
+pipeline.add(bin)
+
+appsink = pipeline.get_by_name("app")
+appsink.connect('new-buffer', on_new_sample) 
+
+pipeline.set_state(gst.STATE_PLAYING)
+
+import cv2
+
+while True:
+    frame = img.copy()
+    
+    cv2.imshow("video", frame)
+
+    k = cv2.waitKey(1)
+    if k==27 or k==ord('q'): break
+
+pipeline.set_state(gst.STATE_NULL)
+cv2.destroyAllWindows()
+
+```
