@@ -1,5 +1,7 @@
 # Yocto
 
+Kompilasi pertama kali (menggunakan virtualbox) memakan waktu lama (sekitar 24 jam)
+
 konfigurasi : `${BUILD_DIR}/conf/local.conf`
 
 konfigurasi layer : `${BUILD_DIR}/conf/bblayers.conf`
