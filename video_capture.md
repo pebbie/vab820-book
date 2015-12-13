@@ -40,9 +40,9 @@ def on_new_sample(sink):
     if buffer:
 	    height = 576
 	    width = 720
-        img_buf = np.ndarray(shape=(height+height/2, width), \
-dtype='uint8', buffer=buffer)
-        img = cv2.cvtColor(img_buf, cv2.COLOR_YUV2BGR_NV12)#[:height,]
+        img_yuv = np.ndarray(shape=(height+height/2, width), \
+dtype=np.uint8, buffer=buffer)
+        img = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR_NV12)[:height,]
     return True
 
 pipeline.add(bin)
