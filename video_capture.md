@@ -12,5 +12,8 @@
 ## plugin `glimagesink`
 `glimagesink` tidak akan jalan kalau variabel `DISPLAY` tidak di-set sebelumnya (segmentation fault).
 
+## plugin `ffmpegcolorspace`
+plugin ini dapat digunakan untuk mentransformasi ruang warna dari data. 
+Misalnya untuk kasus video analog, 
 
 ## plugin `appsink`
