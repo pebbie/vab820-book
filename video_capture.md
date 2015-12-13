@@ -22,6 +22,14 @@ Misalnya untuk kasus video analog,
 
 ## OpenCV 2.4 
 
+### tampilan layar penuh
+
+```
+cv2.namedWindow(MAINWND, cv2.WND_PROP_FULLSCREEN)          
+cv2.setWindowProperty(MAINWND, cv2.WND_PROP_FULLSCREEN, 
+cv2.cv.CV_WINDOW_FULLSCREEN)
+```
+
 ### integrasi dengan gstreamer
 ````
 import gobject
@@ -52,7 +60,7 @@ appsink.connect('new-buffer', on_new_sample)
 
 pipeline.set_state(gst.STATE_PLAYING)
 
-#
+#------------------------------------
 
 import cv2
 
@@ -68,3 +76,19 @@ pipeline.set_state(gst.STATE_NULL)
 cv2.destroyAllWindows()
 
 ```
+
+### Interaksi Mouse
+```
+def mouseHandler(event, x, y, flags, params):
+    if event == cv2.EVENT_RBUTTONDOWN:
+        pass
+    if event == cv2.EVENT_LBUTTONDOWN:
+        pass
+    if event == cv2.EVENT_LBUTTONUP:
+        pass
+        
+    return False
+    
+cv2.setMouseCallback(MAINWND, mouseHandler, None)
+```
+return True pada fungsi MouseHandler akan membuat gambar berhenti (freeze)
