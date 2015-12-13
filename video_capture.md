@@ -4,9 +4,13 @@
 
 ### duet ****gst-inspect**** dan ****gst-launch****
 + Menampilkan daftar source plugin `gst-inspect | grep src`
+
 + Menampilkan daftar sink plugin `gst-inspect | grep sink`
+
 + Mencoba gstreamer `gst-launch videotestsrc ! glimagesink`
+
 + Menggunakan beberapa sink sekaligus menggunakan tee `gst-launch videotestsrc ! tee name=t t. ! queue ! glimagesink t. ! queue ! fakesink`
+
 + Memutar video otomatis `gst-launch playbin uri=file:///home/root/video.avi video-sink=glimagesink`
 
 ### plugin `tvsrc`
