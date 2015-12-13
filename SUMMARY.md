@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Desktop](chapter1.md)
-* Video Capture
+* [Video Capture](video_capture.md)
 
