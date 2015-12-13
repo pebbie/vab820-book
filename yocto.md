@@ -14,6 +14,6 @@ lokasi image : `${BUILD_DIR}/tmp/deploy/images`
 
 ## Bitbake
 
-`bitbake nama-resep`
+perintah umum : `bitbake nama-resep`
 
 kompilasi resep : `bitbake nama-resep -c package`
