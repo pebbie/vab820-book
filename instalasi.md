@@ -8,4 +8,5 @@ Beberapa perangkat tambahan yang diperlukan selama pengembangan :
 + VirtualBox
 + puTTY dan WinSCP
 
-Siapkan ruang harddisk ~200GB untuk menyimpan Virtual Machine dan pengembangan BSP (Board Support Package).
+Siapkan ruang harddisk ~200GB untuk menyimpan Virtual Machine dan pengembangan BSP (Board Support Package). 
+Ukurang harddisk yang dianjurkan oleh VIA hanya 120GB, tetapi ukuran ini biasanya hanya untuk deploy aplikasi saja.
