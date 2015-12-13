@@ -1,6 +1,7 @@
 # Yocto
 
-Kompilasi pertama kali (menggunakan virtualbox) memakan waktu lama (sekitar 24 jam)
+Kompilasi pertama kali (menggunakan virtualbox) memakan waktu lama (sekitar 24 jam). 
+Kompilasi selanjutnya lebih cepat karena memanfaatkan berkas-berkas yang sebelumnya pernah dibuat.
 
 konfigurasi : `${BUILD_DIR}/conf/local.conf`
 
