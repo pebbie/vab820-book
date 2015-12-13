@@ -7,6 +7,7 @@
 + Menampilkan daftar sink plugin `gst-inspect | grep sink`
 + Mencoba gstreamer `gst-launch videotestsrc ! glimagesink`
 + Menggunakan beberapa sink sekaligus menggunakan tee `gst-launch videotestsrc ! tee name=t t. ! queue ! glimagesink t. ! queue ! fakesink`
++ Memutar video otomatis `gst-launch playbin uri=file:///home/root/video.avi video-sink=glimagesink`
 
 ### plugin `tvsrc`
 `tvsrc` akan menghasilkan data analog 720x576 (PAL) 30fps dengan tipe data `YUV420, fourcc(NV12)`
