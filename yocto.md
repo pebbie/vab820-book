@@ -17,3 +17,6 @@ lokasi image : `${BUILD_DIR}/tmp/deploy/images/imx6qvab820`
 perintah umum : `bitbake nama-resep`
 
 kompilasi resep : `bitbake nama-resep -c package`
+
+## Paket-paket esensial
+
