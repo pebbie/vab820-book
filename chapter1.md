@@ -16,3 +16,4 @@ Perubahan pasca penyuntingan berkas `*.desktop` di direktori `/usr/share/applica
 Oleh sebab itu, untuk mengubah konfigurasi pada entri berkas `.desktop` sebaiknya dilakukan di direktori lain. 
 Sebelum dilakukan penyuntingan, pindahkan berkas yang mau diubah ke direktori lain (misal, `~/Desktop`).
 Setelah selesai dilakukan penyuntingan, Pindahkan kembali ke lokasi semula. 
+=======

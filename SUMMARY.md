@@ -8,4 +8,3 @@
 * [Serial Communication](serial_communication.md)
 * [Manajemen Paket](manajemen_paket.md)
 * [Yocto](yocto.md)
-

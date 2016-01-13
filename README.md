@@ -4,4 +4,3 @@ Perkembangan dunia komputer terasa begitu cepat selama satu dekade terakhir. Sek
 
 Buku ini berisi catatan selama mengembangkan aplikasi dengan menggunakan board VIA VAB-820. 
 Minimnya dokumentasi yang diberikan oleh VIA seputar pengembangan perangkat lunak di atas platform VAB-820 menjadi alasan ditulisnya buku ini.
-
